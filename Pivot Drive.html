@@ -1,0 +1,78 @@
+<html>
+  
+<head>
+
+<title>Pivot Drive Help</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<h1>Inputs</h1>
+<h2>RobotDriveDevRef</h2>-
+This is the device reference for the 4 motors that drive the pivot system.  It follows the standard FRC Framework format.
+<li>
+Index 0 is the Rear Left motor<li>
+Index 1 is the Rear Right motor<li>
+Index 2 is the Front Left motor<li>
+Index 3 is the Front Right motor
+</li>
+Open4motors.vi can be used to obtain the references.
+<h2>RobotPivotDevRef</h2>-
+This is the device reference for the 4 independant steering motors.  It follows the standard FRC Framework format.
+<li>
+Index 0 is the Rear Left motor<li>
+Index 1 is the Rear Right motor<li>
+Index 2 is the Front Left motor<li>
+Index 3 is the Front Right motor
+</li>
+Open4motors.vi can be used to obtain the references.
+<h2>Rear Left Current Pivot Angle</h2>
+The angle the Rear Left Pivot wheel is currently at, as determined by a mounted sensor.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Rear Right Current Pivot Angle</h2>
+The angle the Rear Right Pivot wheel is currently at, as determined by a mounted sensor.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Front Left Current Pivot Angle</h2>
+The angle the Front Left Pivot wheel is currently at, as determined by a mounted sensor.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Front Right Current Pivot Angle</h2>
+The angle the Rear Front Right wheel is currently at, as determined by a mounted sensor.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Rear Left Wanted Pivot Angle</h2>
+The setpoint of the angle for the Rear Left wheel.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Rear Right Wanted Pivot Angle</h2>
+The setpoint of the angle for the Rear Right wheel.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Front Left Wanted Pivot Angle</h2>
+The setpoint of the angle for the Front Left wheel.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Front Right Wanted Pivot Angle</h2>
+The setpoint of the angle for the Front Right wheel.<br>
+The angle must be between 0 and 360 degrees.
+<h2>Rear Left Speed</h2>
+The speed of the Rear Left wheel in the pivot system.<br>
+Value ranges from -1 to 1. Negative numbers not recomended but may be used under certain circumstances.
+<h2>Rear Right Speed</h2>
+The speed of the Rear Right wheel in the pivot system.<br>
+Value ranges from -1 to 1. Negative numbers not recomended but may be used under certain circumstances.
+<h2>Front Left Speed</h2>
+The speed of the Front Left wheel in the pivot system.<br>
+Value ranges from -1 to 1. Negative numbers not recomended but may be used under certain circumstances.
+<h2>Front Right Speed</h2>
+The speed of the Front Right wheel in the pivot system.<br>
+Value ranges from -1 to 1. Negative numbers not recomended but may be used under certain circumstances.
+<h2>error in (no error)</h2>
+describes error conditions that occur before this node runs. The default is no error. If an error occurred before this node runs, the node passes the error in (no error) value to error out. This node runs normally only if no error occurred before this node runs. 
+If an error occurs while this node runs, it runs normally and sets its own error status in error out. Use the Simple Error Handler or General Error Handler VIs to display the description of the error code. 
+Use exception control to treat what is normally an error as no error or to treat a warning as an error. Use error in (no error) and error out to check errors and to specify execution order by wiring error out from one node to error in (no error) of the next node.
+<h1>Outputs</h1>
+<h2>RobotDriveDevRef Out</h2>
+The motor reference for the 4 drive motors.
+<h2>RobotPivotDevRef Out</h2>
+The motor reference for the 4 steering motors.
+<h2>error out</h2>
+contains error information. If error in indicates that an error occurred before this VI or function ran, error out contains the same error information. 
+Otherwise, it describes the error status that this VI or function produces. 
+Right-click the error out front panel indicator and select Explain Error from the shortcut menu for more information about the error.
+</html>
